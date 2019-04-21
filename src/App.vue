@@ -1,17 +1,29 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    Would you rather...
+    <Options0></Options0>
+    Would you rather...
+    <Options1></Options1>
+    Would you rather...
+    <Options2></Options2>
+    <Choices></Choices>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Options2 from "./Options2";
+  import Options1 from "./Options1";
+  import Options0 from "./Options0";
+import Choices from "./components/Choices";
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Choices,
+    Options0,
+    Options1,
+    Options2
   }
 }
 </script>
